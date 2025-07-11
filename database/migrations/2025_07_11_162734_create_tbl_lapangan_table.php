@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tbl_temperatur', function (Blueprint $table) {
+        Schema::create('tbl_lapangan', function (Blueprint $table) {
             $table->integer('id')->autoIncrement()->primary();
             $table->string('id_perangkat', 50);
             $table->string('nilai_temperatur', 50);
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tbl_temperatur');
+        Schema::dropIfExists('tbl_lapangan');
     }
 };
